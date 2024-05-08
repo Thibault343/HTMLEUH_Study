@@ -1,0 +1,58 @@
+{
+  "recettes": [
+    {
+      "id": 1,
+      "nom": "Tarte aux pommes",
+      "image": "tarte_aux_pommes.jpg",
+      "pays": "France",
+      "categorie": "Dessert",
+      "temps_preparation": "30 minutes",
+      "temps_cuisson": "45 minutes",
+      "difficulte": "Facile",
+      "ingredients": [
+        "Pâte brisée : 1 rouleau",
+        "Pommes : 6",
+        "Sucre : 100g",
+        "Beurre : 50g",
+        "Cannelle : 1 cuillère à café"
+      ],
+      "instructions": [
+        "Préchauffez le four à 180°C (thermostat 6).",
+        "Épluchez les pommes, retirez les pépins et coupez-les en tranches fines.",
+        "Faites fondre le beurre dans une poêle et faites revenir les pommes avec la cannelle et la moitié du sucre pendant quelques minutes.",
+        "Déroulez la pâte brisée dans un moule à tarte et piquez le fond à l'aide d'une fourchette.",
+        "Répartissez les pommes sur le fond de tarte et saupoudrez du reste de sucre.",
+        "Enfournez la tarte pendant environ 45 minutes, jusqu'à ce qu'elle soit dorée.",
+        "Laissez refroidir avant de servir."
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Sushi",
+      "image": "sushi.jpg",
+      "pays": "Japon",
+      "categorie": "Plat principal",
+      "temps_preparation": "1 heure",
+      "temps_cuisson": "0 minutes",
+      "difficulte": "Moyenne",
+      "ingredients": [
+        "Riz à sushi : 2 tasses",
+        "Vinaigre de riz : 1/4 tasse",
+        "Sucre : 2 cuillères à soupe",
+        "Sel : 1 cuillère à café",
+        "Poisson frais (saumon, thon, etc.) : 300g",
+        "Feuilles d'algue nori : 10",
+        "Wasabi, sauce soja, gingembre mariné : pour accompagner"
+      ],
+      "instructions": [
+        "Cuisez le riz à sushi selon les instructions sur l'emballage. Une fois cuit, mélangez-le avec le vinaigre de riz, le sucre et le sel, puis laissez refroidir.",
+        "Coupez le poisson en fines tranches.",
+        "Placez une feuille d'algue nori sur une natte de bambou. Humidifiez légèrement vos mains et prenez une poignée de riz, étalez-le uniformément sur la moitié inférieure de la feuille nori.",
+        "Placez les tranches de poisson sur le riz.",
+        "Roulez la natte de bambou en serrant délicatement pour former un rouleau. Répétez l'opération avec le reste des ingrédients.",
+        "Coupez les rouleaux en tranches à l'aide d'un couteau bien aiguisé.",
+        "Servez avec du wasabi, de la sauce soja et du gingembre mariné."
+      ]
+    }
+  ]
+}
