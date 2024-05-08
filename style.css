@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    margin-left: 20px; /* Marge à gauche de la page */
 }
 
 header {
@@ -48,4 +49,21 @@ main {
 .featured-recipes h2 {
     margin-bottom: 10px;
     color: #333;
+}
+
+.recette {
+    background-color: #f2f2f2; /* Couleur de fond légèrement grise */
+    padding: 20px; /* Espacement intérieur pour la div de recette */
+    margin-bottom: 20px; /* Espacement en bas de chaque div de recette */
+    border-radius: 10px; /* Angle arrondi pour la div de recette */
+}
+
+.recette-image {
+    width: 200px; /* Taille fixe de l'image */
+    height: auto; /* La hauteur s'ajustera automatiquement en fonction de la largeur */
+}
+
+/* Ajout d'une classe pour définir le fond coloré de la recette */
+.recette-color {
+    background-color: #ffc107; /* Couleur de fond jaune */
 }

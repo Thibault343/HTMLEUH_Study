@@ -1,9 +1,8 @@
-{
-  "recettes": [
+[
     {
       "id": 1,
       "nom": "Tarte aux pommes",
-      "image": "tarte_aux_pommes.jpg",
+      "image": "./Content/images/tarte_aux_pommes.jpg",
       "pays": "France",
       "categorie": "Dessert",
       "temps_preparation": "30 minutes",
@@ -29,7 +28,7 @@
     {
       "id": 2,
       "nom": "Sushi",
-      "image": "sushi.jpg",
+      "image": "./Content/images/sushi.jpg",
       "pays": "Japon",
       "categorie": "Plat principal",
       "temps_preparation": "1 heure",
@@ -57,7 +56,7 @@
     {
       "id": 3,
       "nom": "Space Cake",
-      "image": "space_cake.jpg",
+      "image": "./Content/images/space_cake.jpg",
       "pays": "International",
       "categorie": "Dessert",
       "temps_preparation": "20 minutes",
@@ -84,5 +83,4 @@
         "Laissez refroidir avant de démouler et de servir. Attention, ce dessert est réservé aux adultes et doit être consommé avec modération."
       ]
     }
-  ]
-}
+]

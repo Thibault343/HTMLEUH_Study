@@ -1,41 +1,46 @@
-// Chargement du JSON des recettes depuis le dossier Content
-fetch('./Content/recettes.json') // Modifiez le chemin d'accès ici
-  .then(response => response.json())
-  .then(data => {
-    const mainContent = document.getElementById('main-content');
+fetch('recettes.json')
+    .then(response => response.json())
+    .then(data => {
+        const mainContent = document.getElementById('main-content');
 
-    // Boucle à travers chaque recette
-    data.recettes.forEach(recette => {
-      // Création d'une boîte pour chaque recette
-      const recetteBox = document.createElement('div');
-      recetteBox.classList.add('recette-box');
-      
-      // Création d'éléments pour afficher les détails de la recette
-      const recetteNom = document.createElement('h2');
-      recetteNom.textContent = recette.nom;
+        // Boucle à travers chaque recette
+        data.forEach(recette => {
+            // Création d'une div pour chaque recette
+            const recetteDiv = document.createElement('div');
+            recetteDiv.classList.add('recette');
 
-      const recetteId = document.createElement('p');
-      recetteId.textContent = "ID : " + recette.id;
+            // Ajout de la classe pour le fond coloré
+            recetteDiv.classList.add('recette-color');
 
-      const recetteDifficulte = document.createElement('p');
-      recetteDifficulte.textContent = "Difficulté : " + recette.difficulte;
+            // Création d'un élément pour afficher le nom de la recette
+            const recetteNom = document.createElement('h2');
+            recetteNom.textContent = recette.nom;
 
-      const recetteTemps = document.createElement('p');
-      recetteTemps.textContent = "Temps de préparation : " + recette.temps_preparation;
+            // Création d'un élément pour afficher la difficulté de la recette
+            const recetteDifficulte = document.createElement('p');
+            recetteDifficulte.textContent = "Difficulté : " + recette.difficulte;
 
-      const recetteImage = document.createElement('img');
-      recetteImage.src = recette.image;
-      recetteImage.alt = recette.nom;
-      
-      // Ajout des éléments à la boîte de recette
-      recetteBox.appendChild(recetteImage);
-      recetteBox.appendChild(recetteNom);
-      recetteBox.appendChild(recetteId);
-      recetteBox.appendChild(recetteDifficulte);
-      recetteBox.appendChild(recetteTemps);
+            // Création d'un élément pour afficher le temps de préparation de la recette
+            const recetteTemps = document.createElement('p');
+            recetteTemps.textContent = "Temps de préparation : " + recette.temps_preparation;
 
-      // Ajout de la boîte de recette au contenu principal
-      mainContent.appendChild(recetteBox);
+            // Création de l'image de la recette
+            const recetteImage = document.createElement('img');
+            recetteImage.src = recette.image;
+            recetteImage.alt = recette.nom;
+            // Ajout d'une classe pour définir la taille de l'image
+            recetteImage.classList.add('recette-image');
+
+            // Ajout des éléments à la div de la recette
+            recetteDiv.appendChild(recetteNom);
+            recetteDiv.appendChild(recetteDifficulte);
+            recetteDiv.appendChild(recetteTemps);
+            recetteDiv.appendChild(recetteImage);
+
+            // Ajout de la div de recette au contenu principal
+            mainContent.appendChild(recetteDiv);
+        });
+    })
+    .catch(error => {
+        console.error('Erreur lors du chargement des recettes :', error);
     });
-  })
-  .catch(error => console.error('Erreur lors du chargement des recettes :', error));
