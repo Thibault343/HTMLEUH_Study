@@ -53,6 +53,36 @@
         "Coupez les rouleaux en tranches à l'aide d'un couteau bien aiguisé.",
         "Servez avec du wasabi, de la sauce soja et du gingembre mariné."
       ]
+    },
+    {
+      "id": 3,
+      "nom": "Space Cake",
+      "image": "space_cake.jpg",
+      "pays": "International",
+      "categorie": "Dessert",
+      "temps_preparation": "20 minutes",
+      "temps_cuisson": "45 minutes",
+      "difficulte": "Moyenne",
+      "ingredients": [
+        "Beurre infusé au cannabis : 200g",
+        "Œufs : 4",
+        "Sucre : 200g",
+        "Farine : 200g",
+        "Levure chimique : 1 sachet",
+        "Chocolat noir : 100g (facultatif)",
+        "Vanille liquide : 1 cuillère à café",
+        "Sel : une pincée"
+      ],
+      "instructions": [
+        "Préchauffez le four à 180°C (thermostat 6).",
+        "Dans un bol, battez les œufs avec le sucre jusqu'à obtenir un mélange mousseux.",
+        "Ajoutez le beurre infusé au cannabis fondu et mélangez bien.",
+        "Ajoutez la farine, la levure, la vanille et le sel, et mélangez jusqu'à obtenir une pâte homogène.",
+        "Incorporez le chocolat noir concassé si désiré.",
+        "Versez la pâte dans un moule beurré et fariné.",
+        "Enfournez pendant environ 45 minutes, jusqu'à ce qu'un couteau inséré au centre en ressorte propre.",
+        "Laissez refroidir avant de démouler et de servir. Attention, ce dessert est réservé aux adultes et doit être consommé avec modération."
+      ]
     }
   ]
 }
