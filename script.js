@@ -31,6 +31,14 @@ fetch('recettes.json')
             // Ajout d'une classe pour définir la taille de l'image
             recetteImage.classList.add('recette-image');
 
+            // Création du lien autour de la recette
+            const recetteLink = document.createElement('a');
+            recetteLink.href = 'recette.html?id=' + recette.id;
+            recetteLink.addEventListener('click', function() {
+                localStorage.setItem('selectedRecipe', recette.id);
+            });
+            recetteLink.appendChild(recetteDiv);
+
             // Ajout des éléments à la div de la recette
             recetteDiv.appendChild(recetteNom);
             recetteDiv.appendChild(recetteDifficulte);
@@ -38,7 +46,7 @@ fetch('recettes.json')
             recetteDiv.appendChild(recetteImage);
 
             // Ajout de la div de recette au contenu principal
-            mainContent.appendChild(recetteDiv);
+            mainContent.appendChild(recetteLink);
         });
     })
     .catch(error => {

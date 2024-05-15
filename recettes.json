@@ -55,7 +55,7 @@
     },
     {
       "id": 3,
-      "nom": "Space Cake",
+      "nom": "Cake",
       "image": "./Content/images/space_cake.jpg",
       "pays": "International",
       "categorie": "Dessert",
@@ -75,7 +75,7 @@
       "instructions": [
         "Préchauffez le four à 180°C (thermostat 6).",
         "Dans un bol, battez les œufs avec le sucre jusqu'à obtenir un mélange mousseux.",
-        "Ajoutez le beurre infusé au cannabis fondu et mélangez bien.",
+        "Ajoutez le beurre (infusé au cannabis) fondu et mélangez bien.",
         "Ajoutez la farine, la levure, la vanille et le sel, et mélangez jusqu'à obtenir une pâte homogène.",
         "Incorporez le chocolat noir concassé si désiré.",
         "Versez la pâte dans un moule beurré et fariné.",

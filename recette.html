@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Recettes du Monde</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<h1 id="recette-nom"></h1>
+<div id="recette-details">
+    <img id="recette-image" src="" alt="Image de la recette">
+    <p><strong>Pays :</strong> <span id="recette-pays"></span></p>
+    <p><strong>Catégorie :</strong> <span id="recette-categorie"></span></p>
+    <p><strong>Temps de préparation :</strong> <span id="recette-temps-preparation"></span></p>
+    <p><strong>Temps de cuisson :</strong> <span id="recette-temps-cuisson"></span></p>
+    <p><strong>Difficulté :</strong> <span id="recette-difficulte"></span></p>
+    <h2>Ingrédients :</h2>
+    <ul id="recette-ingredients"></ul>
+    <h2>Instructions :</h2>
+    <ol id="recette-instructions"></ol>
+</div>
+
+<script>
+    // Chargement du fichier JSON des recettes
+    fetch('recettes.json')
+        .then(response => response.json())
+        .then(data => {
+            // Récupère l'ID de la recette sélectionnée depuis le localStorage
+            const selectedRecipeId = localStorage.getItem('selectedRecipe');
+
+            // Recherche la recette correspondante dans le tableau de données
+            const selectedRecipe = data.find(recette => recette.id === parseInt(selectedRecipeId));
+
+            // Vérifie si une recette correspondante a été trouvée
+            if (selectedRecipe) {
+                // Affiche les détails de la recette dans la page HTML
+                document.getElementById('recette-nom').textContent = selectedRecipe.nom;
+                document.getElementById('recette-pays').textContent = selectedRecipe.pays;
+                document.getElementById('recette-categorie').textContent = selectedRecipe.categorie;
+                document.getElementById('recette-temps-preparation').textContent = selectedRecipe.temps_preparation;
+                document.getElementById('recette-temps-cuisson').textContent = selectedRecipe.temps_cuisson;
+                document.getElementById('recette-difficulte').textContent = selectedRecipe.difficulte;
+
+                // Affiche l'image de la recette
+                document.getElementById('recette-image').src = selectedRecipe.image;
+
+                // Affiche les ingrédients de la recette
+                const ingredientsList = document.getElementById('recette-ingredients');
+                selectedRecipe.ingredients.forEach(ingredient => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = ingredient;
+                    ingredientsList.appendChild(listItem);
+                });
+
+                // Affiche les instructions de la recette
+                const instructionsList = document.getElementById('recette-instructions');
+                selectedRecipe.instructions.forEach(instruction => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = instruction;
+                    instructionsList.appendChild(listItem);
+                });
+            } else {
+                console.error('Aucune recette correspondante trouvée.');
+            }
+        })
+        .catch(error => {
+            console.error('Erreur lors du chargement des recettes :', error);
+        });
+</script>
+</body>
+</html>
