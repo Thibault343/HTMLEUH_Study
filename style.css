@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 .recette img {
-    width: 50vh; /* Assure-toi que l'image s'adapte à la largeur de son conteneur */
+    width: 50vw; /* Assure-toi que l'image s'adapte à la largeur de son conteneur */
     border-radius: 10px; /* Coins arrondis */
     margin: 0 auto; /* Centrer l'image horizontalement */
 }
