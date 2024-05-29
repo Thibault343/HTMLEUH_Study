@@ -56,14 +56,14 @@
     {
       "id": 3,
       "nom": "Cake",
-      "image": "./Content/images/space_cake.jpg",
+      "image": "./Content/images/cake.jpg",
       "pays": "International",
       "categorie": "Dessert",
       "temps_preparation": "20 minutes",
       "temps_cuisson": "45 minutes",
       "difficulte": "Moyenne",
       "ingredients": [
-        "Beurre infusé au cannabis : 200g",
+        "Beurre : 200g",
         "Œufs : 4",
         "Sucre : 200g",
         "Farine : 200g",
@@ -75,7 +75,7 @@
       "instructions": [
         "Préchauffez le four à 180°C (thermostat 6).",
         "Dans un bol, battez les œufs avec le sucre jusqu'à obtenir un mélange mousseux.",
-        "Ajoutez le beurre (infusé au cannabis) fondu et mélangez bien.",
+        "Ajoutez le beurre fondu et mélangez bien.",
         "Ajoutez la farine, la levure, la vanille et le sel, et mélangez jusqu'à obtenir une pâte homogène.",
         "Incorporez le chocolat noir concassé si désiré.",
         "Versez la pâte dans un moule beurré et fariné.",

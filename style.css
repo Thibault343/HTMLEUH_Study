@@ -92,13 +92,14 @@ form{
 
 #recette-nom{
     padding-left: 22vw;
-    font-size: 5vw;
+    font-size: 1.8em;
     margin: 3vh 0 3vh 0;
 
 }
 
 #recette-details{
     padding-left: 22vw;
+    padding-bottom: 3vh;
 }
 
 #recette-image{
